@@ -1,0 +1,27 @@
+{
+    "version": "0.1.0",
+    "configurations": [{
+            "type": "prophet",
+            "request": "launch",
+            "name": "Attach to Sandbox"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Mocha Tests",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--require",
+                "@babel/register",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}/test/**/*.js"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "sourceMaps": true
+        }
+    ]
+}

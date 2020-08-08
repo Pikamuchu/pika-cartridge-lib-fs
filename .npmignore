@@ -1,0 +1,39 @@
+*.log
+npm-debug.log*
+
+# Coverage directory used by tools like istanbul
+coverage
+coverage.lcov
+.nyc_output
+
+# Dependency directories
+node_modules
+
+# npm package lock
+package-lock.json
+yarn.lock
+
+# project files
+src
+test
+examples
+utils
+CHANGELOG.md
+.travis.yml
+.editorconfig
+.eslintignore
+.eslintrc
+.eslintrc.json
+.babelrc
+.gitignore
+.prettierrc
+dw.json
+
+# visual studio code config
+.vscode
+
+# github configurations
+.github
+
+# pika script
+pika

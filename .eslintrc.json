@@ -1,0 +1,40 @@
+{
+    "root": true,
+    "extends": "airbnb-base/legacy",
+    "env": {
+        "mocha": true,
+        "commonjs": true,
+        "jquery": true
+    },
+    "globals": {
+        "inView": true
+    },
+    "rules": {
+        "import/no-unresolved": "off",
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1,
+                "VariableDeclarator": 1
+            }
+        ],
+        "func-names": "off",
+        "linebreak-style": 0,
+        "no-param-reassign": "off",
+        "no-use-before-define": "off",
+        "require-jsdoc": "off",
+        "valid-jsdoc": "off",
+        "vars-on-top": "off",
+        "global-require": "off",
+        "no-shadow": [
+            "error",
+            {
+                "allow": ["err", "callback"]
+            }
+        ],
+        "max-len": ["error", 120],
+        "space-before-function-paren": "off",
+        "no-cond-assign": "off"
+    }
+}

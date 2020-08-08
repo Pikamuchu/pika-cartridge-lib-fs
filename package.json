@@ -1,0 +1,61 @@
+{
+    "name": "cartridge_lib_fs",
+    "version": "1.0.0",
+    "description": "Cartridge library from fs node module",
+    "main": "cartridges/lib_fs/cartridge/scripts/lib/fs/index.js",
+    "engines": {
+        "node": ">=6.0"
+    },
+    "scripts": {
+        "build": "babel-node utils/build.js fs",
+        "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+        "lint": "sgmf-scripts --lint js",
+        "prettier": "prettier --write ./cartridges/**/*.js",
+        "test": "nyc mocha --require @babel/register --timeout 20000",
+        "upload": "sgmf-scripts --upload -- ",
+        "uploadCartridge": "sgmf-scripts --uploadCartridge lib_fs",
+        "babel": "babel cartridges -d cartridges"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pikamachu/pika-cartridge-lib-fs.git"
+    },
+    "keywords": [
+        "cartridge",
+        "sfra",
+        "fs"
+    ],
+    "author": "Antonio Marin",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/pikamachu/pika-cartridge-lib-fs/issues"
+    },
+    "homepage": "https://github.com/pikamachu/pika-cartridge-lib-fs",
+    "devDependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.0",
+        "@babel/node": "^7.8.7",
+        "@babel/plugin-transform-runtime": "^7.9.0",
+        "@babel/preset-env": "^7.9.0",
+        "@babel/runtime": "^7.9.2",
+        "autoprefixer": "^9.6.0",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "^8.1.0",
+        "chai": "^4.2.0",
+        "chai-subset": "^1.5.0",
+        "codecov": "^3.6.5",
+        "eslint": "^5.9.0",
+        "eslint-config-airbnb-base": "^5.0.1",
+        "eslint-plugin-mocha": "^5.3.0",
+        "istanbul": "^0.4.4",
+        "mocha": "^5.2.0",
+        "nyc": "^14.1.1",
+        "prettier": "^1.13.0",
+        "replace": "^1.2.0",
+        "searchquire": "^1.5.2",
+        "sgmf-scripts": "^2.1.1",
+        "simple4x": "^1.2.1",
+        "sinon": "^7.1.1",
+        "sonar-scanner": "^3.1.0"
+    }
+}

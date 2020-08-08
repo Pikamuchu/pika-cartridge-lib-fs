@@ -1,0 +1,19 @@
+{
+    "env": {
+        "mocha": true,
+        "amd": true,
+        "node": true
+    },
+    "plugins": ["mocha"],
+    "rules": {
+        "mocha/no-exclusive-tests": "error",
+        "require-jsdoc": "off",
+        "max-len": "off",
+        "quote-props": "off",
+        "no-new": "off",
+        "valid-jsdoc": "off"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2017
+    }
+}

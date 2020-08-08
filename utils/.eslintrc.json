@@ -1,0 +1,12 @@
+{
+  "env": {
+    "amd": true,
+    "node": true
+  },
+  "rules": {
+    "no-loop-func": "off"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  }
+}
